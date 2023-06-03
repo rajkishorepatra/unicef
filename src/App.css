@@ -1,38 +1,350 @@
-.App {
-  text-align: center;
+.imgSize {
+  height: 95vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contNav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contNav {
+  z-index: 10;
+}
+
+.joinUs {
+  margin-top: 3em;
+}
+
+.joinUs h1 {
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+.joinUs h2 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.joinUs h3 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.joinUs h4 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.formJoin {
   display: flex;
+  /* justify-content:space-evenly; */
   flex-direction: column;
-  align-items: center;
+}
+
+.formJoin input {
+  border: 2px solid rgb(34, 114, 219);
+  border-radius: 40px;
+  height: 2.5em;
+  width: 80vh;
+}
+
+.formJoin input:nth-child(4) {
+  margin-top: 3em;
+  border-color: green;
+  cursor: pointer;
+}
+
+.mobMascot {
+  position: relative;
+  z-index: 5;
+}
+
+
+.event {
+  position: relative;
+  padding: 20px 0;
+  margin-top: 3em;
+  background: #e0ecf0;
+  overflow: visible;
+  z-index: -1;
+}
+
+.event:before,
+.event:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+}
+
+.event:after {
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}
+
+.event h1,
+.partner h1 {
+  color: #023a51;
+  font-size: 4.5vw;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+.cards {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  z-index: 10;
+  pointer-events: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card-item {
+  /* margin-bottom: 1rem; */
+  transition: 0.5s;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  margin: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card-item img {
+  width: 100%;
+}
+
+.card-item .card-details {
+  padding: 30px;
+}
+
+.card-item .card-details .card-meta {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* .card-item .card-details .card-meta ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item .card-details .card-meta ul li a {
+  color: #495057;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.card-item .card-details .card-meta ul li a:hover {
+  color: #2874f0;
+} */
+
+.card-item .card-details .title a {
+  color: #212529;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.card-item .card-details .title {
+  color: #2874f0;
+}
+
+.card-item .card-details .excerpt {
+  font-size: 16px;
+  color: #495057;
+  margin-bottom: 30px;
+}
+
+.card-details Button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #212529;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.card-item:hover {
+  border-color: #212529;
+}
+
+
+
+
+
+
+.partner {
+  margin-top: 4em;
+}
+
+.partner .cards img {
+  width: 8em;
+  margin: 1.8em;
+}
+
+
+
+
+
+
+.social-container {
+  padding: 25px 50px;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 2em;
+  background: #e0ecf0;
+  margin-bottom: -3em;
+}
+
+
+.midSocial {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+a.social {
+  margin: 1rem 0.5rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: #E1306C;
+}
+
+
+.footer {
+  background-color: #212121;
+  color: #949494;
+  /* height: auto; */
+  margin-bottom: -2em;
+}
+
+.footer span {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 420px) {
+  .midSocial {
+    flex-flow: row wrap;
   }
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .navImg {
+    width: 3em;
+    height: 3.5em;
+  }
+
+  .imgSize {
+    height: auto;
+  }
+
+  .joinUs h1 {
+    font-size: 5vh;
+    font-weight: bolder;
+  }
+
+  .joinUs h2 {
+    font-size: 2.8vh;
+    font-weight: 600;
+  }
+
+  .joinUs h3 {
+    font-size: 2vh;
+    font-weight: 650;
+  }
+
+  .joinUs h4 {
+    font-size: 2vh;
+    font-weight: 700;
+  }
+
+  .mobMascot {
+    flex-direction: column;
+  }
+
+  .mobMascot img {
+    width: 30vh;
+    padding-bottom: 3em;
+    margin: auto;
+  }
+
+  .formJoin input {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .formJoin input:nth-child(4) {
+    margin-bottom: 2em;
+  }
+
+  .event h1,
+  .partner h1 {
+    font-size: 4.5vh;
+  }
+
+  .partner .cards img {
+    width: 4.2em;
+    margin: .5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+  margin: 2rem auto;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+} */
