@@ -1,5 +1,5 @@
 .imgSize {
-  height: 95vh;
+  height: 100vh;
 }
 
 .cont {
@@ -53,10 +53,16 @@
   width: 80vh;
 }
 
-.formJoin input:nth-child(4) {
-  margin-top: 3em;
+.formJoin input:nth-child(5) {
+  margin-top: 1.5em;
   border-color: green;
   cursor: pointer;
+  background-color: #e0ecf0;
+}
+
+.formJoin h3 {
+  font-size: 2.8vw;
+  font-weight: bold;
 }
 
 .mobMascot {
@@ -114,25 +120,16 @@
 }
 
 .card-item {
-  /* margin-bottom: 1rem; */
   transition: 0.5s;
   max-width: 400px;
-  background-color: #ffffff;
-  border: 1px solid #dee2e6;
   margin: 1em;
 }
 
 .card-item img {
-  width: 100%;
-}
-
-.card-item .card-details {
-  padding: 30px;
+  width: 70%;
 }
 
 .card-item .card-details .card-meta {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -172,7 +169,7 @@
 .card-item .card-details .excerpt {
   font-size: 16px;
   color: #495057;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .card-details Button {
@@ -348,3 +345,45 @@ body {
   display: flex;
   justify-content: center;
 } */
+
+
+#button {
+  display: inline-block;
+  background-color: #49a1eb ;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "^";
+  font-family: FontAwesome;
+  font-weight: 1000;
+  font-size: 1.5em;
+  line-height: 45px;
+  color: #fff;
+  margin: auto;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

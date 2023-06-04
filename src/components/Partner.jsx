@@ -3,7 +3,7 @@ import uni from '../img/unicef.png'
 function Partner() {
     return (
         <>
-            <div className='partner'>
+            <div className='partner' id='partners'>
                 <h1 className='text-center'>Our Partners</h1>
                 <div className='cards'>
                     <img src={uni} alt="logo"/>

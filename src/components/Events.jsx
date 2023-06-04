@@ -5,7 +5,7 @@ import CardEvent from './CardEvent'
 function Events() {
   return (
     <>
-      <div className='event'>
+      <div className='event' id='events'>
         <h1 className='text-center'>Our Events</h1>
         <div className='cards'>
           <CardEvent />

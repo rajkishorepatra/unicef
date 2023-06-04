@@ -9,13 +9,13 @@ function CardEvent() {
     const handleShow = () => setShow(true);
     return (
         <>
-            <div class="card-item bg-white rounded border">
-                <div class="card-img">
-                    <a href="#">
-                        <img src="https://placehold.co/600x400" alt="Image" />
-                    </a>
+            <div class="card-item rounded border">
+                <div class="card-img mt-2  text-center">
+                    {/* <a href="#"> */}
+                        <img src="https://placehold.co/200x200" alt="Image" className='rounded-circle'/>
+                    {/* </a> */}
                 </div>
-                <div class="card-details">
+                <div class="card-details p-2">
                     {/* <div class="card-meta">
                         <ul>
                             <li><a href="#">By: Md Dalwar</a></li>
@@ -28,7 +28,7 @@ function CardEvent() {
                     <p class="excerpt">
                         Gravida in fermentum et sollicitudin ac orci phasellus. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Sed velit dignissim sodales ut eu sem. Nam aliquam sem et tortor consequat id porta. Elit ut aliquam purus sit amet luctus venenatis lectus magna.
                     </p>
-                    <Button onClick={handleShow}>Read More</Button>
+                    {/* <Button onClick={handleShow}>Read More</Button> */}
                 </div>
             </div>
 
