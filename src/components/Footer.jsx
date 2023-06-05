@@ -17,18 +17,18 @@ function Footer() {
             <div className="social-container">
                 <h2 className='p-2'>Join us!</h2>
                 <div className='midSocial'>
-                    <a href="https://www.youtube.com"
+                    <a href="https://www.youtube.com/channel/UCDTrR6n09X7dlONhxJJjKWw"
                         className="youtube social px-3 p-1">
                         <FontAwesomeIcon icon={faYoutube} size="3x" />
                     </a>
-                    <a href="https://www.facebook.com"
+                    <a href="https://www.facebook.com/Youth4WaterPlus/"
                         className="facebook social px-3 p-1">
                         <FontAwesomeIcon icon={faFacebook} size="3x" />
                     </a>
-                    <a href="https://www.twitter.com" className="twitter social px-3 p-1">
+                    <a href="https://twitter.com/youth4waterplus" className="twitter social px-3 p-1">
                         <FontAwesomeIcon icon={faTwitter} size="3x" />
                     </a>
-                    <a href="https://www.instagram.com"
+                    <a href="https://www.instagram.com/youth4waterplus/"
                         className="instagram social px-3 p-1 ">
                         <FontAwesomeIcon icon={faInstagram} size="3x" />
                     </a>

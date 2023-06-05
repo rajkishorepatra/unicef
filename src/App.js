@@ -2,7 +2,7 @@ import NAvbar from './components/Navbar';
 import './App.css';
 import Hero from './components/Hero';
 import JoinUs from './components/JoinUs';
-import Events from './components/Events';
+// import Events from './components/Events';
 import Partner from './components/Partner';
 import Footer from './components/Footer';
 
@@ -14,7 +14,7 @@ function App() {
         <Hero />
       </div>
       <JoinUs />
-      <Events/>
+      {/* <Events/> */}
       <Partner/>
       <Footer/>
     </>

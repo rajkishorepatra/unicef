@@ -194,7 +194,8 @@
 }
 
 .partner .cards img {
-  width: 8em;
+  width: 6em;
+  height: 5em;
   margin: 1.8em;
 }
 
@@ -224,6 +225,7 @@ a.social {
   margin: 1rem 0.5rem;
   transition: transform 250ms;
   display: inline-block;
+  cursor: pointer;
 }
 
 a.social:hover {
@@ -322,6 +324,10 @@ a.instagram {
   .partner .cards img {
     width: 4.2em;
     margin: .5em;
+  }
+
+  .formJoin h3 {
+    font-size: 3vh;
   }
 }
 
