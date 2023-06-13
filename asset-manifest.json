@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e717736.css",
-    "main.js": "/static/js/main.b75713e5.js",
-    "index.html": "/index.html",
-    "main.1e717736.css.map": "/static/css/main.1e717736.css.map",
-    "main.b75713e5.js.map": "/static/js/main.b75713e5.js.map"
+    "main.css": "/ocoy.youth4water.org/static/css/main.1e717736.css",
+    "main.js": "/ocoy.youth4water.org/static/js/main.b75713e5.js",
+    "index.html": "/ocoy.youth4water.org/index.html",
+    "main.1e717736.css.map": "/ocoy.youth4water.org/static/css/main.1e717736.css.map",
+    "main.b75713e5.js.map": "/ocoy.youth4water.org/static/js/main.b75713e5.js.map"
   },
   "entrypoints": [
     "static/css/main.1e717736.css",
