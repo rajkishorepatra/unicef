@@ -1,28 +1,28 @@
-import React, { useRef , useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 function JoinUs() {
-  const [name, setName] = useState('');
-  const [ema, setEma] = useState('');
-  const [num, setNum] = useState('');
-  const formRef = useRef(null)
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbxnkA75lKN1ny3Le16c6m5gG4OReeDlKOYfMd411Oro6usOSQizAESrmMIYHMfzHavGgA/exec"
+  // const [name, setName] = useState('');
+  // const [ema, setEma] = useState('');
+  // const [num, setNum] = useState('');
+  // const formRef = useRef(null)
+  // const scriptUrl = "https://script.google.com/macros/s/AKfycbxnkA75lKN1ny3Le16c6m5gG4OReeDlKOYfMd411Oro6usOSQizAESrmMIYHMfzHavGgA/exec"
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thanks for Registering!😄');
-    fetch(scriptUrl, {
-      method: 'POST',
-      'mode': 'no-cors',
-      body: new FormData(formRef.current),
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert('Thanks for Registering!😄');
+  //   fetch(scriptUrl, {
+  //     method: 'POST',
+  //     'mode': 'no-cors',
+  //     body: new FormData(formRef.current),
 
-    }).then(res => {
-      // console.log("SUCCESSFULLY SUBMITTED")
-    })
-      .catch(err => console.log(err));
-      setNum('');
-      setName('');
-      setEma('');
-  }
+  //   }).then(res => {
+  //     // console.log("SUCCESSFULLY SUBMITTED")
+  //   })
+  //     .catch(err => console.log(err));
+  //     setNum('');
+  //     setName('');
+  //     setEma('');
+  // }
 
   return (
     <>
@@ -35,9 +35,9 @@ function JoinUs() {
         <h4>BHUBANESWAR, ODISHA</h4>
       </div>
       <div className='d-flex justify-content-evenly mobMascot'>
-        <img src="https://ik.imagekit.io/dqe4fvjcky/Youth4Water_Plus_Mascot_B__Revised___1_-removebg-preview_a6_EPVj0a.png?updatedAt=1685953553792" alt="mascot"  className='mx-lg-4'/>
+        <img src="https://ik.imagekit.io/dqe4fvjcky/Youth4Water_Plus_Mascot_B__Revised___1_-removebg-preview_a6_EPVj0a.png?updatedAt=1685953553792" alt="mascot" className='mx-lg-4' />
         <div className='formJoin my-auto'>
-          <h3 className='text-center text-primary mb-lg-5 mt-lg-0 mt-4 mb-4'>Register Yourself</h3>
+          {/* <h3 className='text-center text-primary mb-lg-5 mt-lg-0 mt-4 mb-4'>Register Yourself</h3>
           <form onSubmit={handleSubmit} method='post' ref={formRef} name="google-sheet" className='text-center'>
             <input type='text' name='name' onChange={(e) => setName(e.target.value)}
                         value={name} placeholder='Your Name...' required className='my-2' />
@@ -48,12 +48,22 @@ function JoinUs() {
             <input type='submit' value="Register" />
             {/* <Button id='sub' variant="warning" type='submit'>
               Submit
-            </Button> */}
-          </form>
+            </Button>
+          </form> */}
+          <button
+            className="btni third"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = 'https://forms.gle/chtmrsyziXFWEGC99';
+            }}
+            >
+              Apply Now
+            </button>
+
         </div>
       </div>
     </>
   )
 }
 
-export default JoinUs
+export default JoinUs;

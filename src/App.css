@@ -260,6 +260,53 @@ a.instagram {
   color: #ffffff;
 }
 
+
+
+
+.btni {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red; /* Replace $red with an actual color value */
+  border-radius: 0.6em;
+  color: red; /* Replace $red with an actual color value */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-self: center;
+  font-size: 2em;
+  /* line-height: 1; */
+  /* margin: 20px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: 400; */
+  width: 28vw;
+  /* height: 10vh; */
+}
+
+.btni:hover,
+.btni:focus {
+  color: #000000;
+  outline: 0;
+}
+
+.third {
+  border-color: #49a1eb; /* Replace $#49a1eb with an actual color value */
+  color: #fff;
+  box-shadow: 0 0 40px 40px #49a1eb inset, 0 0 0 0 #49a1eb; /* Replace $#49a1eb with an actual color value */
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #49a1eb inset, 0 0 10px 4px #49a1eb; /* Replace $#49a1eb with an actual color value */
+}
+
+
 @media only screen and (max-width: 420px) {
   .midSocial {
     flex-flow: row wrap;
@@ -329,6 +376,11 @@ a.instagram {
   .formJoin h3 {
     font-size: 3vh;
   }
+
+  .btni{
+    font-size: 1.5em;
+    width: 28vh;
+  }
 }
 
 
@@ -339,18 +391,6 @@ a.instagram {
 
 
 
-
-
-
-/* @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-body {
-  font-family: "Public Sans", sans-serif;
-  margin: 2rem auto;
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-} */
 
 
 #button {
@@ -393,3 +433,5 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+
